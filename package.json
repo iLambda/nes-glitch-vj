@@ -2,8 +2,10 @@
   "name": "nes-glitch-vj",
   "version": "0.1.0",
   "description": "A VJ-ing tool based on glitchNES and koenkivits/nesnes.",
-  "main": "node index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "npm run browserify && node server.js",
+    "browserify": "rm fixtures/nes-glitch-vj.js && browserify -t brfs exports.js > nes-glitch-vj.js && uglifyjs nes-glitch-vj.js > nes-glitch-vj.min.js && cp nes-glitch-vj.min.js fixtures/nes-glitch-vj.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +26,16 @@
   },
   "homepage": "https://github.com/iLambda/nes-glitch-vj#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
+    "midi-launchpad": "^1.0.3",
     "nesnes": "^0.3.1"
+  },
+  "devDependencies": {
+    "brfs": "^1.4.3",
+    "browserify": "^13.1.1",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "log": "^1.4.0",
+    "uglify": "^0.1.5",
+    "uglifyjs": "^2.4.10"
   }
 }
