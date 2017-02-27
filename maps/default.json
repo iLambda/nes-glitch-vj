@@ -1,0 +1,126 @@
+{
+  "buttons": [
+    {
+      "name": "up",
+      "color": "red",
+      "type": "./lib/button-key.js",
+      "position": [0, 8],
+      "args": { "key": "z" }
+    },
+    {
+      "name": "down",
+      "color": "red",
+      "type": "./lib/button-key.js",
+      "position": [1, 8],
+      "args": { "key": "s" }
+    },
+    {
+      "name": "left",
+      "color": "red",
+      "type": "./lib/button-key.js",
+      "position": [2, 8],
+      "args": { "key": "q" }
+    },
+    {
+      "name": "right",
+      "color": "red",
+      "type": "./lib/button-key.js",
+      "position": [3, 8],
+      "args": { "key": "d" }
+    },
+
+    {
+      "name": "select",
+      "color": "orange",
+      "type": "./lib/button-key.js",
+      "position": [4, 8],
+      "args": { "key": "r" }
+    },
+    {
+      "name": "start",
+      "color": "orange",
+      "type": "./lib/button-key.js",
+      "position": [5, 8],
+      "args": { "key": "f" }
+    },
+
+    {
+      "name": "a",
+      "color": "green",
+      "type": "./lib/button-key.js",
+      "position": [6, 8],
+      "args": { "key": "t" }
+    },
+    {
+      "name": "b",
+      "color": "green",
+      "type": "./lib/button-key.js",
+      "position": [7, 8],
+      "args": { "key": "g" }
+    },
+
+    {
+      "name": "statetoggler",
+      "color": { "down": "red", "middle": "yellow", "up": "green" },
+      "type": "./lib/button-statetoggler.js",
+      "position": [8, 0]
+    },
+
+    {
+      "name": "state1",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 1],
+      "args": { "idx": 0 }
+    },
+    {
+      "name": "state2",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 2],
+      "args": { "idx": 1 }
+    },
+    {
+      "name": "state3",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 3],
+      "args": { "idx": 2 }
+    },
+    {
+      "name": "state4",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 4],
+      "args": { "idx": 3 }
+    },
+    {
+      "name": "state5",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 5],
+      "args": { "idx": 4 }
+    },
+    {
+      "name": "state6",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 6],
+      "args": { "idx": 5 }
+    },
+    {
+      "name": "state7",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 7],
+      "args": { "idx": 6 }
+    },
+    {
+      "name": "state8",
+      "color": { "down": "orange", "up": "yellow" },
+      "type": "./lib/button-state.js",
+      "position": [8, 8],
+      "args": { "idx": 7 }
+    }
+  ]
+}
